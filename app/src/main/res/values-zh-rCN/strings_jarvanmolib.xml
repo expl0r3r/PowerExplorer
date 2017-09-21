@@ -1,0 +1,8 @@
+<resources>
+    
+    <string name="time_am">上午</string>
+    <string name="time_pm">下午</string>
+    <string name="battery_percent">电量:%1$d%%</string>
+    <string name="volume_changing">音量:%1$d%%</string>
+    <string name="brightness_changing">亮度:%1$d%%</string>
+</resources>

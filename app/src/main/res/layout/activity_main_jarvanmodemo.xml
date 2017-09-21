@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jarvanmo.demo.MainActivity">
+
+
+    <com.jarvanmo.exoplayerview.ui.ExoVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:resizeMode="none"
+        app:useController="true"
+		android:layout_alignParentTop="true"
+		android:layout_above="@+id/wrapper"
+	/>
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+		android:layout_above="@+id/horizontalDivider6"
+	>
+		<Button
+			android:id="@+id/mode_none"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			
+			android:text="mode_none"
+		/>
+		<Button
+			android:id="@+id/mode_fit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="mode_fit"
+			
+        />
+		<Button
+			android:id="@+id/mode_width"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="mode_width"
+        />
+
+		<Button
+			android:id="@+id/mode_height"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="mode_height"
+        />
+    </LinearLayout>
+	<View
+		android:id="@+id/horizontalDivider6"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_above="@+id/right_scroll"
+	/>
+
+	<HorizontalScrollView
+		android:id="@+id/right_scroll"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_weight="1"
+		android:layout_gravity="center_vertical"
+		android:fillViewport="true"
+		android:scrollbars="none" 
+	>
+
+		<LinearLayout
+			android:id="@+id/rightCommands"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/copys"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:layout_gravity="center"
+				android:text="Copy"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_copy"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+
+			/>
+
+			<Button
+				android:id="@+id/cuts"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:layout_gravity="center"
+				android:text="Cut"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_cut"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+
+			/>
+
+			<Button
+				android:id="@+id/deletes_pastes"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:layout_gravity="center"
+				android:text="Delete"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_delete"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+
+			/>
+
+			<Button
+				android:id="@+id/renames"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:layout_gravity="center"
+				android:text="Rename"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_rename"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+
+			/>
+
+			<Button
+				android:id="@+id/compresss"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Compress"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_zip"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+			<Button
+				android:id="@+id/shares"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Share"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_share"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+			<Button
+				android:id="@+id/hides"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Hide"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_custom_hide"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+			<Button
+				android:id="@+id/addScreens"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Create Shortcut"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_create_shortcut"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+			<Button
+				android:id="@+id/favourites"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Favorite"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/add_to_favorites_48"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+			<Button
+				android:id="@+id/encrypts"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Encrypt"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_lock_lock"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+			<Button
+				android:id="@+id/infos"
+				android:clickable="true"
+				android:layout_width="80dp"
+				android:layout_height="56dp"
+				android:text="Info"
+				android:singleLine="true"
+				android:background="@drawable/ripple"
+				android:drawableTop="@drawable/ic_action_info"
+				android:gravity="center"
+				android:textSize="10sp"
+				android:textStyle="normal"
+				android:textColor="#ffa0a0a0"
+				android:paddingBottom="0dp"
+				android:paddingTop="0dp"
+			/>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+</RelativeLayout>

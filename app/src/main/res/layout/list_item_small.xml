@@ -1,0 +1,174 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listitem"
+	android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+	android:layout_centerVertical="true"
+
+>
+	<!--LinearLayout
+		android:id="@+id/selector"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:padding="0dp"
+	-->
+		<ImageButton 
+			android:id="@+id/cbx"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:paddingTop="3dp"
+			android:paddingBottom="0dp"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:background="@drawable/ripple"
+			android:src="@drawable/dot"
+		/>
+		<!--ImageButton
+			android:id="@+id/more"
+			android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:paddingTop="4dp"
+			android:paddingBottom="0dp"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:background="@drawable/ripple"
+			android:src="@drawable/ic_menu_moreoverflow_dark"/>
+
+	</LinearLayout-->
+
+	<ImageView 
+		android:id="@+id/icon"
+		android:layout_width="54dp"
+		android:layout_height="58dp"
+		android:layout_toRightOf="@+id/cbx"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:layout_centerVertical="true"
+		android:background="@drawable/ripple"
+	/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@+id/icon"
+		android:layout_centerVertical="true"
+		android:paddingLeft="3dp"
+		android:paddingTop="0dp"
+		android:paddingRight="2dp"
+		android:paddingBottom="0dp"
+	>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="0dp"
+		>
+
+			<TextView 
+				android:id="@+id/name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@+id/more"
+				android:maxLines="2"
+				android:ellipsize="middle"
+				android:textSize="14sp"
+				android:textAppearance="?android:textAppearanceSmall"
+			/>
+
+			<ImageButton
+				android:id="@+id/more"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentBottom="true"
+				android:layout_centerVertical="true"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:background="@drawable/ripple"
+				android:src="@drawable/ic_menu_moreoverflow_dark"/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:padding="0dp"
+		>
+			<TextView android:id="@+id/items"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="6"
+				android:singleLine="true"
+				android:textSize="10sp"
+				android:gravity="left"
+				android:textAppearance="?android:textAppearanceSmall"
+			/>
+			<TextView android:id="@+id/attr"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:singleLine="true"
+				android:padding="0dp"
+				android:textSize="10sp"
+				android:gravity="left"
+				android:textAppearance="?android:textAppearanceSmall"
+			/>
+
+			<TextView android:id="@+id/lastModified"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="6"
+				android:singleLine="true"
+				android:padding="0dp"
+				android:textSize="10sp"
+				android:gravity="right"
+				android:textAppearance="?android:textAppearanceSmall"
+			/>
+
+
+		</LinearLayout>
+
+		<!--LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="center_vertical"
+		android:gravity="center"
+		android:padding="0dp"
+		>
+
+		<TextView android:id="@+id/type"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="4"
+		android:singleLine="true"
+
+		android:padding="0dp"
+		android:textSize="9sp"
+		android:gravity="left"
+		android:textAppearance="?android:textAppearanceSmall"
+		/>
+
+
+
+		</LinearLayout-->
+	</LinearLayout>
+
+</RelativeLayout>

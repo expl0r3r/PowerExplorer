@@ -1,7 +1,8 @@
 bin/
+build/
 gen/
 obj/
+objs/
 libs/*/*.so
-src/
 libs/
 

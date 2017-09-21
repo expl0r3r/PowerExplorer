@@ -53,10 +53,10 @@ dependencies{
     //}
 	compile 'com.cloudrail:cloudrail-si-android:+'//2.18.0'
 	//compile 'com.bignerdranch.android:simple-item-decoration:1.0.0'
-	//compile 'com.jarvanmo:exoplayerview:1.1.0'
+	//compile 'com.jarvanmo:exoplayerview:1.0.7'
 	//compile 'com.afollestad:easyvideoplayer:0.3.0'
 	//compile 'ch.acra:acra:4.9.2'
-	//compile 'com.google.android.exoplayer:exoplayer:r2.5.1'
+	compile 'com.google.android.exoplayer:exoplayer:r2.3.1'
 	//compile 'com.google.android.exoplayer:exoplayer-core:r2.5.1'
 	//compile 'com.google.android.exoplayer:exoplayer-dash:r2.5.1'
 	//compile 'com.google.android.exoplayer:exoplayer-ui:r2.5.1'
@@ -101,8 +101,8 @@ android {
     sourceSets {
         main {
             dirs.each { dir ->
-                java.srcDirs "src2/${dir}/java"
-                res.srcDirs "src2/${dir}/res"
+                java.srcDirs "src/${dir}/java"
+                res.srcDirs "src/${dir}/res"
             }
         }
         androidTest.setRoot('tests')
